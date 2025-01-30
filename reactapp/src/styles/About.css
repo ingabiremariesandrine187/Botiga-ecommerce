@@ -1,0 +1,54 @@
+.third-contact{
+    display: flex;
+    gap:8px;
+}
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+    background-color: #ffffff; /* White background */
+}
+
+.about-image img {
+    border-radius: 10px;
+    max-width: 300px;
+    height: auto;
+}
+
+.about-content {
+    max-width: 50%;
+    margin-left: 20px;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #272c81; /* Dark blue color */
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #272c81; /* Dark blue color */
+    margin-bottom: 20px;
+}
+
+.tags {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+    margin-top: 1px;
+}
+
+.tag {
+    background-color: #f3f4f6; /* Light gray background for tags */
+    color: #272c81; /* Dark blue text */
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: 2px solid #272c81;
+}
+.second-description{
+    color: black;
+    font-size: medium;
+}
