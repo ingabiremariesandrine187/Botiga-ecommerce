@@ -1,0 +1,21 @@
+.shop-container{
+    position:relative;
+}
+.image-wrapper{
+    position:relative;
+    display: inline-block;
+}
+.image-wrapper  img{
+    width: 100%; 
+    height: auto;
+}
+.overlay{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  font-size: 3rem; 
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}

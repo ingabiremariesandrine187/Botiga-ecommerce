@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: space-around;
+}
+
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    /* Keep this for larger screens */
+    gap: 60px;
+    list-style: none;
+    margin: 0 10px;
+    background-color: rgb(53, 53, 237);
+    height: 80px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    list-style: none;
+    margin: 0 10px;
+    background-color: rgb(53, 53, 237);
+    height: 80px;
+    justify-content: space-around;
+    width: 100%;
+} */
+
+
+/* .trending {
+    color: white;
+    margin: 10px;
+    font: bold;
+} */
+
+.numbers {
+    color: white;
+    margin: 10px;
+    font: bold;
+    margin-top: 34px;
+}
+
+.logo {
+    background-color: white;
+}
+
+.input {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.input-1 {
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: solid 1px blue;
+    color: black;
+}
+
+.input-2 {
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: solid 1px blue;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+    font-size: larger;
+}
+
+.categoriesBar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin: 10px;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .container1 {
+        gap: 20px;
+    }
+
+    .logo {
+        width: "100%";
+    }
+
+    .input {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .input-2 {
+        width: 100%;
+    }
+
+    .input-1 {
+        width: 100%;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .icons {
+        display: flex;
+        margin-top: 10px;
+        width: "100%";
+    }
+
+    .navbar {
+        height: 300px;
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: "100%";
+    }
+
+    .categoriesBar {
+        width: "100%";
+    }
+
+
+    .navbar {
+        height: auto;
+        /* Adjust height as needed for column layout */
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /* Prevent wrapping in column layout */
+        align-items: center;
+        /* Center items horizontally */
+        gap: 20px;
+        /* Adjust spacing between items in column */
+    }
+
+    .navbar .menu {
+        /* Target the menu specifically */
+        display: flex;
+        flex-direction: column;
+        /* Ensure menu items are in a column */
+        align-items: center;
+        /* Center menu items */
+        gap: 10px;
+        /* Adjust spacing between menu items */
+    }
+
+    .navbar .menu div {
+        /* Style the individual menu items */
+        width: 100%;
+        /* Make menu items take full width */
+        text-align: center;
+        /* Center the text within the items */
+    }
+
+    .categoriesBar {
+        display: flex;
+        align-items: center;
+        /* Vertically center the items */
+        justify-content: center;
+        /* Horizontally center the items */
+        width: 100%;
+        /* Make it full width */
+        margin-bottom: 10px;
+        /* Add some space below */
+    }
+
+    .numbers {
+        text-align: center;
+        /* Center the number */
+        width: 100%;
+        /* Make it full width */
+    }
+
+}
