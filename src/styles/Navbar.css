@@ -56,8 +56,8 @@
 
 .logo {
     background-color: white;
+    color:rgb(41, 39, 39);
 }
-
 .input {
     display: flex;
     gap: 20px;
@@ -85,9 +85,59 @@
 
 .icons {
     display: flex;
-    gap: 30px;
-    font-size: larger;
+    gap: 20px; /* Reduced gap for better spacing */
+    align-items: center; /* Ensures icons are aligned properly */
+    font-size: 24px; /* Adjust icon size */
+    position: relative;
 }
+
+.icons svg {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons svg:hover {
+    transform: scale(1.2);
+    color: gray;
+}
+
+/* Badge Style */
+.icon-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .categoriesBar {
     display: flex;

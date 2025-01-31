@@ -1,21 +1,38 @@
+
 .shop-container{
-    position:relative;
+    display: flex;
+    justify-content: space-between;
 }
-.image-wrapper{
-    position:relative;
-    display: inline-block;
+.category-link {
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
-.image-wrapper  img{
-    width: 100%; 
-    height: auto;
+
+/* Unordered list styling */
+.category-link ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.overlay{
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white; 
-  font-size: 3rem; 
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+
+/* List items styling */
+.category-link li {
+    margin-bottom: 12px; /* Space between links */
+    padding: 8px;
+    border-radius: 5px;
+    
+}
+
+/* Link styling */
+.category-link li a {
+    text-decoration: none; /* Removes underline */
+    color: gray; /* Sets link color to gray */
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
 }

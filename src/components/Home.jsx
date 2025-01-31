@@ -16,6 +16,7 @@ import image23 from '../assets/Images/pic1.webp'
 import image24 from '../assets/Images/pic2.webp'
 import image25 from '../assets/Images/pic3.webp'
 import { IoIosStarOutline } from "react-icons/io";
+import { TfiArrowCircleRight } from "react-icons/tfi";
 import { Link } from "react-router-dom"
 
 function Home()
@@ -58,7 +59,28 @@ content:'New york ny'
             title:'Digital goods store',
             content:'New york ny'
             },
-    ];
+          ];
+            const homepost= [
+              {
+                id:7,
+                image:Image7,
+                title:'All In One Bottle',
+                content:'$22.00 – $55.00'
+                },
+                {
+                  id:8,
+                  image:Image8,
+                  title:'Amazon Alexa',
+                  content:'$49.00 – $69.00'
+                  },
+                  {
+                    id:9,
+                    image:Image9,
+                    title:'Headset Gamer Legion',
+                    content:'$22.00 – $55.00'
+                    },
+     
+            ];
 return(
 <>
 <div class="container2">
@@ -108,23 +130,40 @@ return(
     </nav>
 <div>
  <h1>
-    <div>explore our latest and</div> 
-    <div>greatest electronics</div>
+    <div class="description-1">explore our latest and</div> 
+    <div class="description-2">greatest electronics</div>
  </h1>
  <button>Shop now</button>
 </div>
 </div>
-
 <div class="images">
 <div class="images1">
     <h1>Popular categories</h1>
     <div class="Image-first">
-       <div><img src={Image1} alt='Image1' class="img1"></img></div> 
-        <div><img src={Image2} alt='Image2' class="img2"></img></div>
+      <div class="image-1">
+      <div><img src={Image1} alt='Image1' class="img1"></img></div> 
+      <h4>Body lotion</h4>
+      </div>
+       <div class="image-2">
+       <div><img src={Image2} alt='Image2' class="img2"></img></div>
+       <h4>Sports</h4>
+       </div>
+        <div class="image-3">
         <div><img src={Image3} alt='Image3'class="img3"></img></div>
+        <h4>Computer gadget</h4>
+        </div>
+        <div class="image-4">
         <div><img src={Image4} alt='Image4'class="img4"></img></div>
-        <div><img src={Image5} alt='Image5'class="img5"></img></div>
-        <div><img src={Image6} alt='Image6'class="img6"></img></div>
+        <h4>Electronics</h4>
+        </div>
+<div class="image-5">
+<div><img src={Image5} alt='Image5'class="img5"></img></div>
+<h4>Watch</h4>
+  </div>        
+<div class="image-6">
+<div><img src={Image6} alt='Image6'class="img6"></img></div>
+<h4>Woman clothes</h4>
+</div>
     </div>
 </div>
 <div class="images2">
@@ -136,15 +175,15 @@ return(
 <div class="bottle-price">$22.00-$55.00</div>
 <div class="star-icons">
 <div><IoIosStarOutline  class="yellow"/></div>
-<div><IoIosStarOutline /></div>
-<div><IoIosStarOutline /></div>
+<div><IoIosStarOutline class="yellow"/></div>
+<div><IoIosStarOutline class="yellow"/></div>
 <div><IoIosStarOutline /></div>
 <div><IoIosStarOutline /></div>
 </div>
 </div>
-<div><img src={Image8} alt='Image8' class="img8"></img>
-<div>Amazone alexa</div>
-<div>$49.00-$69.00</div>
+<div class="description2" ><img src={Image8} alt='Image8' class="img8"></img>
+<div class="bottle1">Amazone alexa</div>
+<div class="bottle1-price">$49.00-$69.00</div>
 <div class="star-icons">
 <div><IoIosStarOutline  class="yellow"/></div>
 <div><IoIosStarOutline /></div>
@@ -153,11 +192,11 @@ return(
 <div><IoIosStarOutline /></div>
 </div>
 </div>
-<div><img src={Image9} alt='Image9' class="img9"></img>
-<div>Headset gamer legion</div>
-<div>$22.00-$55.00</div>
-<div class="star-icons">
-<div><IoIosStarOutline  class="yellow"/></div>
+<div class="description3"><img src={Image9} alt='Image9' class="img9"></img>
+<div class="bottle2">Headset gamer legion</div>
+<div class="bottle2-price">$22.00-$55.00</div>
+<div class="star-icons3">
+<div><IoIosStarOutline class="yellow"/></div>
 <div><IoIosStarOutline /></div>
 <div><IoIosStarOutline /></div>
 <div><IoIosStarOutline /></div>
@@ -165,6 +204,7 @@ return(
 </div>
 </div>
 </div>
+<div class="second-button"><button>SHOP NOW</button></div>
 <div class="arrays-pictures">
     <div class="Vendor"><h1>Our Vendor list</h1></div>
     <div class="Vendor-container">
@@ -172,8 +212,11 @@ return(
         <div key={post.id} className="home-card">
           <img src={post.image} alt={post.title} />
           <div className="Vendor-content">
-            <h2>{post.title}</h2>
+            <div>
+            <h2>{post.title}</h2>  
             <p>{post.content}</p>
+            </div>
+            <div><TfiArrowCircleRight /></div>
           </div>
         </div>
       ))}
@@ -190,16 +233,40 @@ return(
     </div>
     <div>
 
-    <div class="first-reason"><h2>Easy returns</h2>
+    <div class="first-reason"><h2>Customer services</h2>
         <p>Our return policy is simple and that is why customers love our shop.</p>
         </div>
     </div>
     <div>
-    <div class="first-reason"><h2>Easy returns</h2>
+    <div class="first-reason"><h2>High quality</h2>
         <p>Our return policy is simple and that is why customers love our shop.</p>
         </div>
     </div>
     </div>
+    <div class="explore-contain">
+    <h1>
+      Explore our products
+    </h1>
+    </div>
+    <div class="expore-container">
+    {homepost.map((post) => (
+        <div key={post.id} className="home-card">
+          <img src={post.image} alt={post.title} />
+          <div className="Home-content">
+            <h2>{post.title}</h2>  
+            <p>{post.content}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+ <div class="Follow-us">
+  <h1>Follow us on @ instangram</h1>
+ </div>
+<div class="instagram-pic">
+hhhhhh
+</div>
+
+
 </div> 
 
 

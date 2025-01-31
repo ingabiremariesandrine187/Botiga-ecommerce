@@ -18,9 +18,17 @@ function Navbar() {
           <div><input type="text" placeholder="Search product" class="input-2" /></div>
         </div>
         <div class="icons">
-          <RiAccountCircle2Line />
+          
+          <div><RiAccountCircle2Line /></div>
+          <div style={{ position: "relative" }}>
           <LuMessageSquare />
+          <span className="icon-badge">0</span>
+          </div>
+          <div style={{ position: "relative" }}>
           <GoHeart />
+          <span className="icon-badge">1</span>
+          </div>
+          
         </div>
       </div>
       <div className="navbar">
