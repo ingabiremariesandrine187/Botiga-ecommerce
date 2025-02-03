@@ -1,38 +1,35 @@
-
-.shop-container{
+.Shop{
+    margin-left:40px;
     display: flex;
-    justify-content: space-between;
-}
-.category-link {
-    width: 250px;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    gap:250px;
 }
 
-/* Unordered list styling */
-.category-link ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* List items styling */
-.category-link li {
-    margin-bottom: 12px; /* Space between links */
-    padding: 8px;
-    border-radius: 5px;
-    
-}
-
-/* Link styling */
-.category-link li a {
-    text-decoration: none; /* Removes underline */
-    color: gray; /* Sets link color to gray */
-    font-weight: 500;
-    font-size: 16px;
+.category-link{
     display: block;
-    padding: 5px 10px;
-    transition: color 0.3s ease;
+    padding: 6px 10px;
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.category-link:hover {
+    color:gray; 
+    background-color: transparent; 
+}
+.pictures-input{
+    margin-top: 30px;
+    width: 76%;
+    height: 70px;
+    margin-right: 35px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display:flex;
+    gap:405px;
+}
+.default-icon{
+    display:flex;
+    gap:10px;
+}
+.default-second-icon{
+    display:flex;
+    gap:5px;
 }
