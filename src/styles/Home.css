@@ -361,3 +361,7 @@ margin-top:60px;
  .instagram-pic{
     display: flex;
  }
+ .image-container{
+    display:flex;
+    gap:20px;
+ }

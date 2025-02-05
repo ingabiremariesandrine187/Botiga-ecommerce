@@ -5,9 +5,7 @@ import { GoChevronDown } from "react-icons/go";
 import { GoMultiSelect } from "react-icons/go";
 import { FaTh } from "react-icons/fa";
 import image50 from '../assets/Images/bottle.webp'
-
 import '../styles/Shop.css'
-
 function Shop() {
   const shop= [
   {

@@ -8,6 +8,8 @@ import Blog from './components/Blog'
 import Vendors from './components/Vendors'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Homepage from './components/Homepage'
+import Singlepage from './components/Singlepage'
 function App() {
   return (
     <>
@@ -19,6 +21,8 @@ function App() {
       <Route path='/Blog' element={<Blog />} />
       <Route path='/Vendors' element={<Vendors />} />
       <Route path='/Contact' element={<Contact />} />
+      <Route path='/View' element={<Homepage />} />
+      <Route path='//singlecard/:id' element={<Singlepage/>}/>
         </Route>
        </Routes>
     </BrowserRouter>
