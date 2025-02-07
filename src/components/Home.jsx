@@ -15,10 +15,18 @@ import image22 from '../assets/Images/Vendor three.webp'
 import image23 from '../assets/Images/pic1.webp'
 import image24 from '../assets/Images/pic2.webp'
 import image25 from '../assets/Images/pic3.webp'
+import image26 from '../assets/Images/image30.webp'
+import image27 from '../assets/Images/image31.webp'
+import image28 from '../assets/Images/image32.webp'
+import image29 from '../assets/Images/Picture12.webp'
+import image30 from '../assets/Images/Picture13.webp'
+import image31 from '../assets/Images/Picture14.webp'
+import image32 from '../assets/Images/Picture15.webp'
+import image33 from '../assets/Images/Picture16.webp'
+import image34 from '../assets/Images/Picture17.webp'
 import { IoIosStarOutline } from "react-icons/io";
 import { TfiArrowCircleRight } from "react-icons/tfi";
 import { Link } from "react-router-dom"
-
 function Home()
 {
 const home= [
@@ -60,7 +68,7 @@ content:'New york ny'
             content:'New york ny'
             },
           ];
-            const homepost= [
+           const homepost= [
               {
                 id:7,
                 image:Image7,
@@ -79,7 +87,51 @@ content:'New york ny'
                     title:'Headset Gamer Legion',
                     content:'$22.00 – $55.00'
                     },
+                    {
+                      id:10,
+                      image:image26,
+                      title:'Headset Gamer Legion',
+                      content:'$22.00 – $55.00'
+                      },
+                      {
+                        id:11,
+                        image:image27,
+                        title:'Headset Gamer Legion',
+                        content:'$22.00 – $55.00'
+                        },
+                        {
+                          id:12,
+                          image:image28,
+                          title:'Headset Gamer Legion',
+                          content:'$22.00 – $55.00'
+                          },
      
+            ];
+            const homecards= [
+              {
+                id:13,
+                image:image29
+                },
+                {
+                  id:14,
+                  image:image30
+                  },
+                  {
+                    id:15,
+                    image:image31
+                    },
+                    {
+                      id:16,
+                      image:image32
+                      },
+                      {
+                        id:17,
+                        image:image33
+                        },
+                        {
+                          id:18,
+                          image:image34
+                          },                   
             ];
 return(
 <>
@@ -180,6 +232,8 @@ return(
 <div><IoIosStarOutline /></div>
 <div><IoIosStarOutline /></div>
 </div>
+<button class="select-option">Select Option</button>
+  <button class="quick-review">Quick Review</button>
 </div>
 <div class="description2" ><img src={Image8} alt='Image8' class="img8"></img>
 <div class="bottle1">Amazone alexa</div>
@@ -191,6 +245,8 @@ return(
 <div><IoIosStarOutline /></div>
 <div><IoIosStarOutline /></div>
 </div>
+<button class="select-option">Select Option</button>
+  <button class="quick-review">Quick Review</button>
 </div>
 <div class="description3"><img src={Image9} alt='Image9' class="img9"></img>
 <div class="bottle2">Headset gamer legion</div>
@@ -202,6 +258,8 @@ return(
 <div><IoIosStarOutline /></div>
 <div><IoIosStarOutline /></div>
 </div>
+<button class="select-option">Select Option</button>
+  <button class="quick-review">Quick Review</button>
 </div>
 </div>
 <div class="second-button"><button>SHOP NOW</button></div>
@@ -249,27 +307,53 @@ return(
     </h1>
     </div>
     <div class="expore-container">
-    {homepost.map((post) => (
-        <div key={post.id} className="home-card">
-          <img src={post.image} alt={post.title} />
-          <div className="Home-content">
-            <h2>{post.title}</h2>  
-            <p>{post.content}</p>
+     {/* First three images */}
+     <div className="explore-row">
+        {homepost.slice(0, 3).map((item) => (
+          <div key={item.id} className="explore-item">
+            <div className="image-wrapper">
+              <img src={item.image} alt={item.title} />
+              <button className="select-option">Select Option</button>
+            </div>
+            <h3>{item.title}</h3>
+            <p>{item.content}</p>
+            
+        <button className="select-option">Select Option</button>
+            <button className="quick-review">Quick Review</button>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+
+      {/* Last three images */}
+      <div className="explore-row">
+  {homepost.slice(3, 6).map((item) => (
+    <div key={item.id} className="explore-item">
+      <div className="image-wrapper">
+        <img src={item.image} alt={item.title} />
+      </div>
+      <div className="product-details">
+        <h3>{item.title}</h3>
+        <p>{item.content}</p>
+      </div>
+      <div className="buttons">
+        <button className="select-option">Select Option</button>
+        <button className="quick-review">Quick Review</button>
+      </div>
+    </div>
+  ))}
+</div>
     </div>
  <div class="Follow-us">
   <h1>Follow us on @ instangram</h1>
  </div>
-<div class="instagram-pic">
-hhhhhh
+ <div className="instagram-pic">
+  {homecards.map((post) => (
+    <div key={post.id} className="home-card">
+      <img src={post.image} alt={`Image ${post.id}`} />
+    </div>
+  ))}
 </div>
-
-
 </div> 
-
-
 </>
 )
 }

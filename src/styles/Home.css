@@ -110,19 +110,7 @@ margin-left:25px;
     height:auto;
 }
 
-.img7{
-width: 300px;
-height:auto;
-}
-.img8{
-width:300px;
-height:auto;
-}
-.img9{
-width:300px;
-height:auto;
-margin-left:80px;
-}
+
 .Second button{
     text-align: center;
 }
@@ -190,6 +178,7 @@ margin-bottom: 15px;
 }
 .reason-heading h1{
     color:#333333;
+    margin-left: 30px;
 }
 .first-reason p{
     margin-bottom: 20px;
@@ -328,16 +317,10 @@ margin-bottom: 15px;
 .explore-contain h1{
 color:rgb(41, 39, 39);
 display: flex;
-margin-left:20px;
+margin-left:30px;
 margin-top:60px;
 }
-.expore-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    margin-left: 50px;
-    margin-right:20px;
-}
+
 .Home-content{
     padding: 16px; 
 }
@@ -365,3 +348,184 @@ margin-top:60px;
     display:flex;
     gap:20px;
  }
+
+ .image-second .description1,
+.image-second .description2,
+.image-second .description3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-second img {
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+.select-option{
+    position: absolute;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 500px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 4px;
+    width:110px;
+    height:50px;
+}
+
+.quick-review {
+  position: absolute;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 500px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  border-radius: 4px;
+  width:250px;
+  height:55px;
+}
+
+.select-option {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quick-review {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-second .description1:hover img,
+.image-second .description2:hover img,
+.image-second .description3:hover img {
+  opacity: 0.7;
+}
+
+.image-second .description1:hover .select-option,
+.image-second .description2:hover .select-option,
+.image-second .description3:hover .select-option,
+.image-second .description1:hover .quick-review,
+.image-second .description2:hover .quick-review,
+.image-second .description3:hover .quick-review {
+  opacity: 1;
+}
+.image-cont{
+    position: relative;
+    display: inline-block;
+}
+.image-cont .quick-review :hover{
+    opacity: 1;
+}
+.image-cont img{
+    font-size: large;
+}
+
+
+
+.quick-review{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.explore-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .explore-row {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.explore-item {
+    text-align: center;
+    width: 30%;
+    position: relative;
+}
+  
+  .explore-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.image-wrapper img {
+    width: 100%;
+    display: block;
+}
+  
+  .select-option {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .image-wrapper:hover .select-option {
+    opacity: 1;
+  }
+  
+  .explore-item h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  .explore-item p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .quick-review {
+    display: block;
+    width: 100%;
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .explore-item:hover .quick-review {
+    opacity: 1;
+  }
+  .images2 h1{
+    margin-left:40px;
+  }

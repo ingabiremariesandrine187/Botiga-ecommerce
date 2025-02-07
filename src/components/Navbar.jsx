@@ -16,14 +16,13 @@ function Navbar() {
 
   return (
     <div className="container">
-      
       {form && (
         <div className="modal-overlay">
           <Login handleForm={handleForm} />
         </div>
       )}
       <div className="container1">
-      <Link to="/View">View</Link>
+      
         <div className='logo'>
           <h2>Botiga</h2>
         </div>

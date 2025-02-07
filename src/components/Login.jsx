@@ -1,20 +1,32 @@
 import React from "react";
 import '../styles/Login.css';
 import { IoClose } from "react-icons/io5";
+import { FaTwitter } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Login = ({ handleForm }) => {
   return (
     <div className="modal">
       <div className="form-Login">
-        <IoClose className="close-icon" onClick={handleForm} />
+        <div class="login-close">
+        <IoClose className="close-icon" onClick={handleForm}/>
         <h2>Login</h2>
-        <input type="text" placeholder="First Name"class="input-name" required  />
-        <input type="text" placeholder="Last Name" class="input-lname" required />
+          </div>
+          <div class="Login">
+          <input type="text" placeholder="First Name"class="input-name" required />
+        <input type="text" placeholder="Last Name" class="input-lname" required/>
         <input type="email" placeholder="Email" class="input-email" required />
         <button type="submit">Login</button>
+          </div>
+        <div><Link to="/Sign-up">Signup</Link></div>
         <div class="login-description">
           <div class="description-login">
-          <h6>or sign up using </h6>
+          
+          <div><FaTwitter /></div>
+          <div><FcGoogle /></div>
+          <div><FaGithub /></div>
           </div>
           </div>
       </div>

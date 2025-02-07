@@ -8,11 +8,10 @@ import image43 from '../assets/Images/v4.webp'
 import image44 from '../assets/Images/v5.webp'
 import image45 from '../assets/Images/v6.webp'
 import { AiOutlineRightCircle } from "react-icons/ai";
+import { useNavigate } from 'react-router-dom';
 import '../styles/Vendor.css'
-
-
-function Vendor() {
-const  vendor= [
+function Vendor  ()  {
+ const vendor= [
   {
     id:1,
     image:image40,
@@ -47,6 +46,8 @@ const  vendor= [
   },
 
 ]
+   
+   
   return (
   <div class="class-vendor">
 <div class="vendor-header"><h1>Store list</h1></div>

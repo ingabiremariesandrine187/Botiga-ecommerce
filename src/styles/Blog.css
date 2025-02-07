@@ -34,7 +34,6 @@
   .blog-content {
     padding: 16px;
   }
-  
   .blog-content h2 {
     font-size: 18px;
     font-weight: bold;
@@ -47,14 +46,21 @@
     margin-bottom: 16px;
   }
   
-  .blog-content .read-more {
+  .blog-content  {
     display: inline-block;
     text-decoration: underline;
     color: black;
     text-align: center;
     padding: 8px 16px;
-    text-decoration: none;
+    text-decoration: underline;
     border-radius: 4px;
     transition: background-color 0.3s ease;
   }
-
+.blog-content button{
+  background-color: transparent;
+  color:black;
+  border:none;
+}
+.blog-content button :hover{
+  background-color: white;
+}
