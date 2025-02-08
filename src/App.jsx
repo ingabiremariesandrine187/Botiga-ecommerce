@@ -11,7 +11,9 @@ import Footer from './components/Footer'
 import Homepage from './components/Homepage'
 import Singlepage from './components/Singlepage'
 import Singleblog from './components/Singleblog'
+import Singlehome from './components/Singlehome'
 import Signup from './components/Signup';
+
 function App() {
   return (
     <>
@@ -26,6 +28,7 @@ function App() {
       <Route path='/View' element={<Homepage />} />
       <Route path='//singlecard/:id' element={<Singlepage/>}/>
       <Route path='//singleblog/:id' element={<Singleblog/>}/>
+      <Route path='//singlehome/:id' element={<Singlehome/>}/>
       <Route path='/Sign-up' element={<Signup />} />
         </Route>
        </Routes>

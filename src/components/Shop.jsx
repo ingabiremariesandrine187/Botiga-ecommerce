@@ -8,45 +8,28 @@ import image50 from '../assets/Images/bottle.webp'
 import '../styles/Shop.css'
 function Shop() {
   const shop= [
-  {
-  id: 1,
-        image: image50,
-        title: 'Sancta Monicas store',
-        content: 'New york ny',
-  },
+ 
+  
 ]
   return (
     <div class="shop-container">
       <div class="image-wrapper">
         <img src={Image15} alt='Image15'></img>
         </div>
+        <div class="overlay-text">
+        Shop
+    </div>
     <div class="Shop">
       <div class="shop-link">
       <div class="categorie-title"><h4>Categories</h4></div>
           <Link to="/" className="category-link">Body Lotion</Link>
-        
-        
           <Link to="/computer-gadget" className="category-link">Computer Gadget</Link>
-        
-        
           <Link to="/electronics" className="category-link">Electronics</Link>
-        
-        
           <Link to="/fashion" className="category-link">Fashion</Link>
-        
-        
           <Link to="/general" className="category-link">General</Link>
-        
-        
           <Link to="/shoes" className="category-link">Shoes</Link>
-        
-    
           <Link to="/sports" className="category-link">Sports</Link>
-        
-        
           <Link to="/watch" className="category-link">Watch</Link>
-        
-        
           <Link to="/woman-clothes" className="category-link">Woman Clothes</Link>
       </div>
       <div class="pictures-input">
@@ -62,9 +45,9 @@ function Shop() {
         </div>
         <div>
         {shop.map((post) => (
-        <div key={post.id} className="blog-card">
+        <div key={post.id} className="shop-card">
           <img src={post.image} alt={post.title} />
-          <div className="blog-content">
+          <div className="shop-content">
             <h2>{post.title}</h2>
             <p>{post.content}</p>
             <a href="#" className="read-more">Read more</a>
@@ -72,9 +55,6 @@ function Shop() {
         </div>
       ))}
         </div>
-
-
-
     </div>
     </div>
   );

@@ -27,8 +27,7 @@ import image34 from '../assets/Images/Picture17.webp'
 import { IoIosStarOutline } from "react-icons/io";
 import { TfiArrowCircleRight } from "react-icons/tfi";
 import { Link } from "react-router-dom"
-function Home()
-{
+import { useNavigate } from 'react-router-dom';
 const home= [
 {
 id: 1,
@@ -68,7 +67,7 @@ content:'New york ny'
             content:'New york ny'
             },
           ];
-           const homepost= [
+           export const homeposts= [
               {
                 id:7,
                 image:Image7,
@@ -133,6 +132,10 @@ content:'New york ny'
                           image:image34
                           },                   
             ];
+            const Home = () => {
+              const Homet =useNavigate();
+              const handleHomet = (id) => {
+                Homet(`/singlehome/${id}`)}
 return(
 <>
 <div class="container2">
@@ -309,7 +312,7 @@ return(
     <div class="expore-container">
      {/* First three images */}
      <div className="explore-row">
-        {homepost.slice(0, 3).map((item) => (
+        {homeposts.slice(0, 3).map((item) => (
           <div key={item.id} className="explore-item">
             <div className="image-wrapper">
               <img src={item.image} alt={item.title} />
@@ -326,18 +329,18 @@ return(
 
       {/* Last three images */}
       <div className="explore-row">
-  {homepost.slice(3, 6).map((item) => (
+  {homeposts.slice(3, 6).map((item) => (
     <div key={item.id} className="explore-item">
       <div className="image-wrapper">
         <img src={item.image} alt={item.title} />
       </div>
       <div className="product-details">
         <h3>{item.title}</h3>
-        <p>{item.content}</p>
+        <p>{item.content}</p> 
       </div>
       <div className="buttons">
         <button className="select-option">Select Option</button>
-        <button className="quick-review">Quick Review</button>
+        <button className="quick-review "onClick={()=>handleHomet(item.id)}>Quick Review</button>
       </div>
     </div>
   ))}
@@ -356,5 +359,6 @@ return(
 </div> 
 </>
 )
+              
 }
 export default Home;
