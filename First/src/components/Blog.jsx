@@ -6,7 +6,8 @@ import image33 from '../assets/Images/Blog3.webp'
 import image34 from '../assets/Images/Blog4.webp'
 import image35 from '../assets/Images/Blog5.webp'
 import image36 from '../assets/Images/Blog6.webp'
-const blogPosts = [
+import { useNavigate } from 'react-router-dom';
+ export const blogPosts = [
     {
       id: 1,
       image:image31,
@@ -45,6 +46,10 @@ const blogPosts = [
     }
   ];
   const Blog = () => {
+    const blogt =useNavigate();
+    const handleBlogt =(id)=>{
+      blogt(`/singleblog/${id}`)
+    }
     return (
         <div>
     <h1 className="blog-title">Blog</h1>
@@ -55,7 +60,7 @@ const blogPosts = [
           <div className="blog-content">
             <h2>{post.title}</h2>
             <p>{post.content}</p>
-            <a href="#" className="read-more">Read more</a>
+            <button onClick={()=>handleBlogt(post.id)} >Read-more</button>
           </div>
         </div>
       ))}

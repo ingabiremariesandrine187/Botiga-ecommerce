@@ -1,21 +1,102 @@
-.shop-container{
-    position:relative;
-}
-.image-wrapper{
-    position:relative;
-    display: inline-block;
-}
-.image-wrapper  img{
-    width: 100%; 
+/* Shop container */
+.shop-container {
+    width: 100%;
+    padding: 20px;
+  }
+   .image-wrapper {
+        margin-top: 0px; /* Reduce the top margin */
+        padding-top: 0px; /* Ensure no extra space */
+        position: relative;
+        width: 100%;
+    }
+  /* Image Section */
+  .image-wrapper img {
+    width: 100%;
     height: auto;
-}
-.overlay{
+    display: block;
+  }
+  
+  .overlay-text {
     position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white; 
-  font-size: 3rem; 
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-}
+    top: 50%; /* Center vertically */
+    left: 20px; /* Move to the left */
+    transform: translateY(-50%);
+    font-size: 48px; /* Increase size */
+    font-weight: bold;
+    color: black; /* Make it stand out */
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  /* Shop layout */
+  .Shop {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Sidebar - Categories */
+  .shop-link {
+    width: 20%;
+  }
+  
+  .categorie-title h4 {
+    font-weight: bold;
+  }
+  
+  .category-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+  
+  .category-link:hover {
+    color: #ff6600;
+  }
+  
+  /* Products Header - Aligning Sorting & Results */
+  .shop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height:50px;
+    margin-top:20px;
+    padding-bottom: 10px;
+    border:0.5px solid white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px;
+  }
+  
+  .results-text {
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .sorting-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .default-sorting {
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .view-icons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .view-icons svg {
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .view-icons svg:hover {
+    color: #ff6600;
+  }
+  

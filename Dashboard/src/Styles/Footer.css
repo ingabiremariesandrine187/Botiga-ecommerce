@@ -1,0 +1,61 @@
+/* Footer.css */
+.footer {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark grey text */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Align left and right content */
+    align-items: center; /* Vertically center the content */
+    border-top: 1px solid #e0e0e0; /* Subtle top border */
+    font-size: 14px;
+    position: fixed;
+    margin-left: 25%;
+  }
+  
+  .footer-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Spacing between links */
+  }
+  
+  .footer-right a {
+    text-decoration: none; /* Remove underlines */
+    color: #333; /* Dark grey link color */
+    transition: color 0.2s ease; /* Hover effect */
+  }
+  
+  .footer-right a:hover {
+    color: #3f51b5; /* Change color on hover */
+  }
+  
+  .buy-now-button {
+    background-color: #db4437; /* Red button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Spacing between icon and text */
+    transition: background-color 0.2s ease;
+  }
+  
+  .buy-now-button:hover {
+    background-color: #c53929; /* Darker red on hover */
+  }
+  
+  .heart-icon {
+    color: #e91e63; /* Pink heart */
+    margin: 0 5px;
+  }
+  
+  .cart-icon {
+    font-size: 16px;
+  }

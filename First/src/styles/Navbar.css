@@ -1,19 +1,25 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.container{
-    background-color: white;  
+.container {
+    background-color: white;
 }
-.container1{
+
+.container1 {
     display: flex;
-    gap:80px;
+    flex-wrap: wrap;
+    gap: 80px;
     justify-content: space-around;
 }
+
+
 .navbar {
     display: flex;
-    gap:60px;
+    flex-wrap: wrap;
+    /* Keep this for larger screens */
+    gap: 60px;
     list-style: none;
     margin: 0 10px;
     background-color: rgb(53, 53, 237);
@@ -21,119 +27,234 @@
     justify-content: space-around;
     width: 100%;
 }
-.navbar li {
-    margin: 10px; 
-    align-items: center;
-    margin-top: 34px;
-    color:white;
-}
-.navbar li a {
-    text-decoration: none; 
-    color: white;
-    font-weight: bold;   
-}
-.trending{
-    color: white;
-    margin: 10px; 
-    font:bold;
-}
-.numbers{
-    color: white;
-    margin: 10px; 
-    font:bold;
-    margin-top: 34px;
-    
-}
-.input{
+
+/* .navbar {
     display: flex;
-    gap:20px;
+    flex-wrap: wrap;
+    gap: 60px;
+    list-style: none;
+    margin: 0 10px;
+    background-color: rgb(53, 53, 237);
+    height: 80px;
+    justify-content: space-around;
+    width: 100%;
+} */
+
+
+/* .trending {
+    color: white;
+    margin: 10px;
+    font: bold;
+} */
+
+.numbers {
+    color: white;
+    margin: 10px;
+    font: bold;
+    margin-top: 34px;
+}
+
+.logo {
+    background-color: white;
+    color:rgb(41, 39, 39);
+}
+.input {
+    display: flex;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
+
 }
-.input-1{
-    width:100px;
+
+.input-1 {
+    width: 100px;
     height: 30px;
     border-radius: 8px;
     margin-bottom: 10px;
-    border: solid 1px blue; 
+    border: solid 1px blue;
     color: black;
 }
-.input-2{
-    width:300px;
+
+.input-2 {
+    width: 300px;
     height: 40px;
     border-radius: 8px;
     margin-bottom: 10px;
     border: solid 1px blue;
 }
-.icons{
+
+.icons {
     display: flex;
-    gap:30px;
-    font-size:larger;
+    gap: 20px; /* Reduced gap for better spacing */
+    align-items: center; /* Ensures icons are aligned properly */
+    font-size: 24px; /* Adjust icon size */
+    position: relative;
 }
-.display-icon{
+
+.icons svg {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons svg:hover {
+    transform: scale(1.2);
+    color: gray;
+}
+
+/* Badge Style */
+.icon-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.categoriesBar {
     display: flex;
     gap: 10px;
     align-items: center;
-    color:white;
+    color: white;
 }
 
-
-
-
-.hamburger-icon {
-    display: none; /* Hide on larger screens */
-    font-size: 24px;
-    cursor: pointer;
-    color:white;
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin: 10px;
+    align-items: center;
+    color: white;
+    font-weight: bold;
 }
 
-.navbar.mobile-menu {
-    display: flex; /* Use flexbox for vertical alignment */
-    flex-direction: column; /* Stack items vertically */
-    position: absolute;
-    top: 80px; /* Adjust top as needed */
-    left: 0;
-    width: 100%;
-    background-color: rgb(53, 53, 237); /* Same as your navbar background */
-    text-align: center; /* Center text within list items */
-    z-index: 1; /* Ensure it's above other content */
-    height:auto;
-}
-
-.navbar.mobile-menu li {
-    margin: 10px 0; /* Adjust margin for spacing */
+.menu a {
+    text-decoration: none;
+    color: white;
     padding: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional separator */
 }
 
-.navbar.mobile-menu .display-icon{
-    display:none;
+.menu a:hover {
+    text-decoration: underline;
 }
 
-@media (max-width: 768px) { /* Adjust breakpoint as needed */
-    .container1{
-        flex-wrap:wrap;
-        gap:20px;
+
+
+@media (max-width: 768px) {
+
+    .container1 {
+        gap: 20px;
     }
-    .input{
+
+    .logo {
+        width: "100%";
+    }
+
+    .input {
         flex-direction: column;
-        width:100%;
+        width: 100%;
     }
-    .input-2{
-        width:100%;
+
+    .input-2 {
+        width: 100%;
     }
-    .input-1{
-        width:100%;
-    }
-    .navbar {
-        display: none; /* Hide the regular navbar */
+
+    .input-1 {
+        width: 100%;
     }
 
     .hamburger-icon {
-        display: block; /* Show the hamburger icon */
+        display: block;
     }
-    .icons{
-        display:flex;
-        margin-top:10px;
+
+    .icons {
+        display: flex;
+        margin-top: 10px;
+        width: "100%";
     }
+
+    .navbar {
+        height: 300px;
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: "100%";
+    }
+
+    .categoriesBar {
+        width: "100%";
+    }
+
+
+    .navbar {
+        height: auto;
+        /* Adjust height as needed for column layout */
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /* Prevent wrapping in column layout */
+        align-items: center;
+        /* Center items horizontally */
+        gap: 20px;
+        /* Adjust spacing between items in column */
+    }
+
+    .navbar .menu {
+        /* Target the menu specifically */
+        display: flex;
+        flex-direction: column;
+        /* Ensure menu items are in a column */
+        align-items: center;
+        /* Center menu items */
+        gap: 10px;
+        /* Adjust spacing between menu items */
+    }
+
+    .navbar .menu div {
+        /* Style the individual menu items */
+        width: 100%;
+        /* Make menu items take full width */
+        text-align: center;
+        /* Center the text within the items */
+    }
+
+    .categoriesBar {
+        display: flex;
+        align-items: center;
+        /* Vertically center the items */
+        justify-content: center;
+        /* Horizontally center the items */
+        width: 100%;
+        /* Make it full width */
+        margin-bottom: 10px;
+        /* Add some space below */
+    }
+
+    .numbers {
+        text-align: center;
+        /* Center the number */
+        width: 100%;
+        /* Make it full width */
+    }
+
 }
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }

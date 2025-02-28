@@ -8,6 +8,15 @@ import Blog from './components/Blog'
 import Vendors from './components/Vendors'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Homepage from './components/Homepage'
+import Singlepage from './components/Singlepage'
+import Singleblog from './components/Singleblog'
+import Singlehome from './components/Singlehome'
+import Signup from './components/Signup';
+import Homeproduct from './components/Homeproduct';
+import DashboardLayout from './Dashboard/DashboardLayout';
+import Dashboardview from './Dashboard/Dashboardview';
+
 function App() {
   return (
     <>
@@ -19,10 +28,18 @@ function App() {
       <Route path='/Blog' element={<Blog />} />
       <Route path='/Vendors' element={<Vendors />} />
       <Route path='/Contact' element={<Contact />} />
+      <Route path='/View' element={<Homepage />} />
+      <Route path='//singlecard/:id' element={<Singlepage/>}/>
+      <Route path='//singleblog/:id' element={<Singleblog/>}/>
+      <Route path='//singlehome/:id' element={<Singlehome/>}/>
+      <Route path='/Sign-up' element={<Signup />} />
+      <Route path='/homeproduct' element={<Homeproduct/>}/>
         </Route>
+        <Route path='/' element={<DashboardLayout/>}>
+      <Route path='/dashboard' index element={<Dashboardview/>}/>
+      </Route>
        </Routes>
     </BrowserRouter>
-    
     </>
   )
 }

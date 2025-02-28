@@ -1,0 +1,66 @@
+.Logo{
+    font-size: 25px;
+    color:rgb(35, 32, 32);
+    font-weight: 400;   
+}
+.logo-icon{
+    display: flex;
+    gap:90px;
+    align-items: center;
+    margin-left:10px;
+}
+.icon-dashboard{
+    color:rgb(35, 33, 33);
+    font-size: 18px;
+}
+.Navbar-container{
+    margin-top: 0;
+    background-color:white;
+    display: flex;
+    gap:40px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 35px; /* Adjust padding as needed */
+}
+.search-icon{
+    display: flex;
+}
+.search-input {
+    width: 200px;
+    padding: 10px 40px; 
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+
+.search-word{
+    color:gray;
+}
+
+.notification-picture{
+    display: flex;
+    gap:13px;
+    align-items: center;
+}
+.search-user{
+    display: flex;
+    gap:790px;
+    align-items: center;
+}
+.notification-icon{
+    font-size: 25px;
+    color:gray;
+}
+.profile-icon{
+    font-size:18px;
+    color:gray;
+    font-size:25px;
+}

@@ -1,0 +1,70 @@
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position:relative;
+  }
+  .form-Login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .close-icon {
+    margin-top: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color:black;
+  }
+  .Login button{
+    background-color: blue;
+    height: 30px;
+    width:300px;
+    border-radius: 4px;
+  }
+  
+  .input-name{
+    border:1px solid gray;
+    border-radius: 4px;
+    height: 30px;
+    width:300px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  .input-lname{
+    border:1px solid gray;
+    border-radius: 4px;
+    height: 30px;
+    width:300px;
+    margin-bottom:15px;
+    
+  }
+  .input-email{
+    border:1px solid gray;
+    border-radius: 4px;
+    height: 30px;
+    width:300px;
+  }
+  .description-login{
+    display: flex;
+    gap:10px;
+    margin-top: 80px;
+  }
+  .description-login h5{
+    color:gray;
+    font-weight: 500;
+  }
+  .input-name::placeholder {
+    text-align: center; 
+} 
+.input-lname::placeholder{
+  text-align: center;
+}
+.input-email::placeholder{
+  text-align: center;
+}

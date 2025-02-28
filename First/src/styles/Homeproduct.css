@@ -1,0 +1,43 @@
+
+.input-title{
+    border:1px solid gray;
+    border-radius: 4px;
+    height: 28px;
+    width:300px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.input-image{
+    border:1px solid gray;
+    border-radius: 4px;
+    height: 28px;
+    width:300px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.input-content{
+    border:1px solid gray;
+    border-radius: 15px;
+    height: 28px;
+    width:300px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.input-price{
+    border:1px solid gray;
+    border-radius: 15px;
+    height: 28px;
+    width:300px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.forms{
+ flex-direction:column;
+  gap:0.5rem;
+  display: flex;
+  
+}
+
+
+

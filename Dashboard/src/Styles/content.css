@@ -1,0 +1,124 @@
+/* DashboardContent.css */
+.dashboard-content {
+    display: flex;
+    gap: 20px;
+    margin-left: 20%;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    margin-right: -20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    width: 100%; /* Take up equal width */
+    display: flex;
+    flex-direction: column; /* Stack header, body, footer */
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .date-select {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 8px 12px;
+    outline: none;
+    appearance: none; /* Remove default arrow */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); /* Add custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 12px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .settings-icon {
+      font-size: 20px;
+      color: #757575;
+      cursor: pointer;
+    }
+  
+  .card-body {
+    padding: 20px;
+    flex-grow: 1; /* Make the body grow to fill the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+  }
+  
+  .chart-container {
+    height: 150px; /* Adjust chart height */
+    /* Add more styling for your chart here */
+  }
+  
+  /* Placeholder Styles */
+  .bar-chart-placeholder {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end; /* Align bars to the bottom */
+    height: 100%;
+  }
+  
+  .bar {
+    width: 15px;
+    background-color: #3f51b5;
+    border-radius: 3px 3px 0 0; /* Round top corners */
+  }
+  
+  /* Line Chart Placeholder */
+  .line-chart-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Center the SVG */
+    }
+  
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .sales-number {
+    font-size: 16px;
+    font-weight: 500;
+    color: #424242;
+  }
+  
+  .arrow-up {
+    color: #2ecc71; /* Green arrow */
+    margin-left: 5px;
+  }
+  
+  .view-more-button {
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #424242;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .view-more-button:hover {
+    background-color: #f5f5f5;
+  }
+  

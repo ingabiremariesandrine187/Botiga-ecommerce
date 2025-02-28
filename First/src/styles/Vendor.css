@@ -20,19 +20,137 @@
     display:flex;
     gap:9px;
     align-items: center;
+    
 }
 .input-3{
-    background-color: blue;
-    width:70px;
-    height: 30px;
+    background-color: rgb(87, 87, 254);
+    width:84px;
+    height: 40px;
+    border-radius:3px;
+    margin-right: 30px;
+    border:0.5px solid white;
+
+    
 }
 .input-4{
     background-color:white;
-    width:70px;
-    height: 30px;
+    width:109px;
+    height: 40px;
     border: solid 0.5px black;
+    margin-right: 65px;
+}
+.input-4::placeholder{
+text-align: center;
+color:black;
+font-weight: 100;
+}
+.icons-vendor{
+    margin-right:15px;
+    display: flex;
+    gap:10px;
+}
+.input-3::placeholder {
+    font-size: 15px;
+    font-weight: 10px;
+    color: white; /* Change color if needed */
+    text-align: center;
+}
+.vendor-header{
+    font-size: 30px;
+    color:rgb(52, 49, 49);
+}
+.Vendor-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
+.v-card {
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically */
+    align-items: center; /* Center content */
+}
+
+.v-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+/* Overlay text */
+.vendor-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+/* Title styles */
+.vendor-content h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Location styles */
+.vendor-content p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color:white;
+}
+
+/* Star rating styles */
+.ratings {
+    color: gold;
+    font-size: 16px;
+}
+
+/* Phone number styles */
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+/* Icon */
+.icon-vendor {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 30px;
+    color: blue;
+    cursor: pointer;
+}
+
+/* Small circular image */
+.small-overlay-img {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+}
+
+.small-overlay-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
